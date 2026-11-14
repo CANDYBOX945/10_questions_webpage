@@ -483,13 +483,13 @@
         title: "巢狀結構 Debug",
         body: "HTML 遵循俄羅斯娃娃般「先開後關」的巢狀 (Nesting) 原則。下列哪一段 HTML 程式碼<strong>存在語法結構錯誤</strong>？",
         options: [
-          { key: "A", text: "&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/strong&gt;&lt;/p&gt;" },
+          { key: "A", text: "&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/p&gt;&lt;/strong&gt;" },
           { key: "B", text: "&lt;h2&gt;關於我 &lt;em&gt;新手村民&lt;/em&gt;&lt;/h2&gt;" },
           { key: "C", text: "&lt;p&gt;請點擊 &lt;strong&gt;&lt;em&gt;這裡&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;" },
           { key: "D", text: "&lt;h1&gt;&lt;span&gt;歡迎光臨&lt;/span&gt;&lt;/h1&gt;" }
         ],
         answer: "A",
-        explain: "<p>本題四個選項其實都符合正確的「先開後關」巢狀原則。</p><p>若要出「有錯誤」的題目，常見錯誤寫法會是<strong>交叉關閉</strong>，例如：</p><div class=\"code-block\">&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/p&gt;&lt;/strong&gt;</div><p>正確應寫：<code>&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/strong&gt;&lt;/p&gt;</code></p><p>目前選項皆為正確寫法，作答時請仔細比對是否有交叉關閉的情況。</p>"
+        explain: "<p>常見錯誤寫法會是<strong>交叉關閉</strong>，例如：</p><div class=\"code-block\">&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/p&gt;&lt;/strong&gt;</div><p>正確應寫：<code>&lt;p&gt;這是一段 &lt;strong&gt;重要通知&lt;/strong&gt;&lt;/p&gt;</code></p><p>作答時請仔細比對是否有交叉關閉的情況。</p>"
       },
       {
         id: 5,
@@ -573,7 +573,7 @@
           { key: "D", text: "段落內容必須強制移動到 ＜head＞ 區塊內" }
         ],
         answer: "B",
-        explain: "<p>對初學者來說，AI 常會直接給出尚未教過的標籤（<code>&lt;span&gt;</code>）與行內樣式（<code>style=\"...\"</code>），這會讓學習進度混亂。</p><p>建議先把基礎標籤（h1~h6、p、a、img、ul/li 等）學穩，再慢慢接觸 CSS 與更多語意標籤。</p><p>(A)(C)(D) 都不是正確的問題點。</p>"
+        explain: "<p>對初學者來說，AI 常會直接給出尚未教過的標籤（<code>&lt;span&gt;</code>）與行內樣式（<code>style=\"...\"</code>），這會讓學習進度混亂。</p><p>建議先把基礎標籤（h1~h6、p、a、img、ul/li 等）學穩，再慢慢接觸 CSS 與更多語意標籤。</p><p>這AI出的題目有夠爛的我也錯這一題🤬</p>"
       }
     ];
 
